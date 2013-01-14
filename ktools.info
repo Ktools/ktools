@@ -1,5 +1,5 @@
 name = Ktools
-description = Utility functions for common Drupal usage.
+description = Utility functions for enhancing Drupal usage.
 package = Ktools
 core = 7.x
 version = 7.x-1.x
