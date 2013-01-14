@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * module file of ktools.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function ktools_menu() {
+  $items = array();
+  
+  $items['admin/config/ktools'] = array(
+    'title' => 'Ktools',
+    'description' => 'Ktools configuration.',
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('access administration pages'),
+    'file' => 'system.admin.inc',
+    'file path' => drupal_get_path('module', 'system'),
+  );
+  
+  return $items;
+}
